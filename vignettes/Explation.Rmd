@@ -1,0 +1,62 @@
+---
+title: "What my package does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What my package does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Math4753FallTaylor)
+```
+
+# Introduction
+
+Here's my package for the Fall 2022 semester of Math-4753. I am not very good at coding, so I hope this is all correct. There are for functions below that I added to my package during the duration of the course.
+
+# Functions
+
+## MyBin
+The MyBin functions makes a bar graph and matrix based on the sample size, iterations, and probility.
+```{r}
+mybin(iter=1000,n=18, p=0.3)
+```
+
+## Scatterhist
+The Scatterhist function makes a combination scatterplot and historgram based on data you imput into it.
+```{r}
+with(fire, scatterhist(DISTANCE, DAMAGE, xlab="distance"))
+```
+
+
+## Myncurve
+The above function makes a graph of a curve based on parameter you put into the function including mu and sigma.
+```{r}
+myncurve(10,5,6)
+```
+
+
+## Mycltp
+The above function makes a combination of graphs based on the sample size and iterations.
+```{r}
+mycltp(n = 10, iter = 1000)
+```
+
+# Data
+
+## Fire
+```{r}
+data(fire)
+head(fire)
+```
+Above is the fire data placed into the package during Lab 7.
+
+
