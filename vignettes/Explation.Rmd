@@ -44,10 +44,11 @@ myncurve(10,5,6)
 ```
 
 
-## Mycltp
-The above function makes a combination of graphs based on the sample size and iterations.
+## MyBoot2
+The MyBoot2 Function makes a histogram of the bootstrap sample statistics for a data set that is put into it.
 ```{r}
-mycltp(n = 10, iter = 1000)
+fire <- Math4753FallTaylor::fire
+Math4753FallTaylor::myboot2(x=fire$DAMAGE)
 ```
 
 # Data
